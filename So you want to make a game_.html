@@ -16,7 +16,8 @@
 }
 tw-passage a:hover {
 	color: #00bfff;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction" tags="" position="3606,4" size="100,100">What Is this Guide?
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction" tags="" position="3606,4" size="100,100">
+What Is this Guide?
 This guide has been put together to help people who may not have much experience with games, interactive technologies, or game design and development fundamentals, who are interested in using games for humanities research. Reading through this guide will help you understand what goes into making games by providing an overview of several areas that you should be familiar with before you begin your project. The major sections include discussions of:
 
 [[Technology]]
@@ -31,6 +32,9 @@ This section will discuss the fundamentals of game design to help you determine 
 [[Theory]]
 In the Theory section you will find several resources related to scholarship surrounding educational and serious games, gamification, and other relevant work coming out of the field of game studies. This will also include pointing out several common pitfalls when attempting to make educational, serious, or other types of persuasive games. The goal is to help you avoid the common mistakes with respect to representation, interaction, subjectivity, and embodiment. Finally this section will feature some examples of games that may give you ideas for thinking about your own game and a breakdown of the tools and processes used. 
 
+[[Development]]
+The development section will discuss the organization of a game development project ranging from documentation to the composition of your team. This section also contains discussions on ensuring that your team is adequately compensated for their effort, tips on encouraging diversity within the development team, and project management guidelines to ensure you&#39;re working within your team&#39;s capacity.
+
 By following the link below you will find an overview on how to use this guide that will help walk you through some of the decisions and questions you should ask before beginning your project. This will make the process of finding a team of people who will be willing to help you.
 [[How to use this Guide]]
 
@@ -41,10 +45,96 @@ Quick Links
 [[Requirements Checklist]]
 
 [[Who wrote this guide and why should you listen to them? -&gt; Attribution]]
+
 </tw-passagedata><tw-passagedata pid="2" name="Technology" tags="" position="2139.3333333333335,749.3333333333333" size="100,100">[[Medium]]
 [[Platforms]]
-[[Engines]]</tw-passagedata><tw-passagedata pid="3" name="Art" tags="" position="2621.6666666666665,1328.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="4" name="Design" tags="" position="2888.3333333333335,1420.3333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="5" name="Theory" tags="" position="3081.6666666666665,1433.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="6" name="How to use this Guide" tags="" position="3848,1132" size="100,100">&#39;&#39;How to use this Guide.&#39;&#39;
-Because this guide is designed to help you answer questions pertaining to game development and design there is no “correct” way to use this guide. However, the guide is structured in such a way that it will help you figure out exactly what it is you are trying to do. In software development we call this “requirements engineering”. If you come to a developer with a clear idea of what you want they are generally more willing to help, or at least hear you out. Each section in this guide offers information that will give you some ideas as to what tools will be most useful to accomplish your goals and cover game design concepts so that you will have the vocabulary to communicate these goals. The following list describes just a few ways you may want to interface with the content here. 
+[[Engines]]
+
+Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="3" name="Art" tags="" position="3268.333333333333,1138.6666666666667" size="100,100">## Overview
+
+The art style is an important deciding factor when determining what tools you will be using as well as the kinds of game you will be making and what kinds of people you will need on your team. A consistent visual style is also one of the most important parts of a well polished game and can have a massive impact on the experience and engagement for players. This section will go over several common art styles as well as the tools necessary to achieve them. Then this section will cover additional art considerations that are important for making games, such as Technical art, Animation, as well as Character and Environment art. It should be noted that my background is in Software Engineering, Game Design, and Production. As such this will be framed from this perspective rather than that of an artist. There will be nuances that you should discuss with your artists. You should work with them to make sure they are within their comfort zone in terms of style, tools, and workflow. 
+
+##Styles
+
+There are many different art styles used in games, though the can generally be broken down into two main categories. 3D and 2D art, much like engineering, have very different principles and considerations. The section below will briefly describe, list some pros and cons, and show some examples of each major approach to art. 
+
+[[3D]]
+
+
+[[2D]]
+
+
+##Categories
+In addition to creating the art assets there are several other artistic considerations to take into account. Some of these are more traditionally art oriented, while others require a more technical knowledge. That being said the importance of each is dependent on your choice of engine, art style, and aesthetic choices. The following section will give a brief overview of several art related areas that are commonly found in games. Many of these can be accomplished by a talented art team, while others may necessitate a specialist depending on how much your project will rely on the options made available. 
+
+[[Environment Art]]
+ 
+[[Technical Art]]
+
+
+[[Character Art]]
+ 
+
+[[Animation]]
+
+
+Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="4" name="Design" tags="" position="3706.6666666666665,335.33333333333326" size="100,100">#Design
+##Introduction
+Game Design is a tricky subject to get a grasp on if you haven’t done it before. I often ask students how they would describe game design. The most common answer is “coming up with the things that make the game fun.” This answer is to be expected, after all many of them are getting into game design because they want to make things like the things they enjoy.  They aren’t necessarily wrong to approach game design in this way, however there is much more to it than coming up with things that are fun. I usually respond with questions like, “How do you know if something is fun?” and “Do games have to be fun?”.  These questions don’t have good answers, but instead they are meant to break new designers out of the mindset that everything they do has to be “fun.” 
+In order to better describe what goes into designing a game I like to point people to &lt;a href=&quot;https://www.gamasutra.com/blogs/LizEngland/20140423/216092/quotThe_Door_Problemquot_of_Game_Design.php&quot; target=&quot;_blank&quot;&gt; Liz England’s blog post on “The Door Problem”: &lt;/a&gt; 
+
+Premise: You are making a game.
+* Are there doors in your game?
+* Can the player open them?
+* Can the player open every door in the game?
+* Or are some doors for decoration?
+* How does the player know the difference?
+* Are doors you can open green and ones you can’t red? Is there trash piled up in front of doors you can’t use? Did you just remove the doorknobs and call it a day?
+* Can doors be locked and unlocked?
+* What tells a player a door is locked and will open, as opposed to a door that they will never open?
+* Does a player know how to unlock a door? Do they need a key? To hack a console? To solve a puzzle? To wait until a story moment passes?
+* Are there doors that can open but the player can never enter them?
+* Where do enemies come from? Do they run in from doors? Do those doors lock afterwards?
+* How does the player open a door? Do they just walk up to it and it slides open? * Does it swing open? Does the player have to press a button to open it?
+* Do doors lock behind the player?
+* What happens if there are two players? Does it only lock after both players pass through the door?
+* What if the level is REALLY BIG and can’t all exist at the same time? If one player stays behind, the floor might disappear from under them. What do you do?
+* Do you stop one player from progressing any further until both are together in the same room?
+* Do you teleport the player that stayed behind?
+* What size is a door?
+* Does it have to be big enough for a player to get through?
+* What about co-op players? What if player 1 is standing in the doorway – does that block player 2?
+* What about allies following you? How many of them need to get through the door without getting stuck?
+* What about enemies? Do mini-bosses that are larger than a person also need to fit through the door?
+It’s a pretty classic design problem. SOMEONE has to solve The Door Problem, and that someone is a designer.
+
+	Liz’s example highlights many of the questions the game designer is expected to answer throughout the course of the project. From this we can distil this down into 3 questions that should always be on the designer’s mind:
+
+0.What kind of experience do we want for the player?
+0.What should the player be doing? 
+0.Does this support the experience we want? 
+There are other, more specific questions that will arise during the design and development process, but these questions will guide your answers and act as a starting point for any design problem. 
+
+Another thing that the designer is charged with is determining what game mechanics should be used in the game.  Considering the desired player experience using the questions will help you determine  what will be a good fit.  There are an endless number of game mechanics that all combine in unique ways so I will not provide a list. What I recommend instead is to play games that are similar to the vision you have and figure out which ones you like, work well, and would help achieve the desired player experience. In game design we often use the term “feel” to describe how a game mechanic functions. This is simultaneously more specific than “fun” but also more nebulous. 
+When a designer talks about how a game feels, they are referring to the experiential reactions and how well they fit into the overall design of the game. It also refers to how satisfying something is to do. Game feel is a highly subjective judgment and comes from a place of intuition. The more experience a game designer has, the easier it is to weigh their personal taste with that of a general audience. Discussing a game is the one place where its totally alright to use the word “fun”, but it is better if you can be more specific.  This is also one reason why [[playtesting]] your game with outside participants during development is incredibly important for fine tuning the feel and experience of the game. 
+
+The remainder of this section will give an overview of a few specialist design roles.
+
+
+##Systems Design
+Systems design is what I like to refer to as the “Math” portion of game design. The systems designer is responsible for determining how things like currency, resources, and character stats work within the game and how to balance them so that they feel fair and reasonable. 
+
+##Level Design
+Level designers put together the layouts for the environment where the game happens. They usually work closely with the environment artist to develop assets and visual themes that are conducive to guiding and teaching the player. Level designers are important because it is their job to both guide the player through the space ensuring that they encounter the interesting things you want them to see while also teaching the player how to play the game beyond just what buttons do what, but rather how they are going to be interacting with the mechanics, what their limits are, and what things are important to interact with. 
+##General Game Design Resources
+
+
+Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="5" name="Theory" tags="" position="3511.6666666666665,352" size="100,100">Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="6" name="How to use this Guide" tags="" position="3934.666666666667,325.3333333333333" size="100,100">&#39;&#39;How to use this Guide.&#39;&#39;
+Because this guide is designed to help you answer questions pertaining to game development and design there is no “correct&quot; way to use this guide. However, the guide is structured in such a way that it will help you figure out exactly what it is you are trying to do. In software development we call this “requirements engineering&quot;. If you come to a developer with a clear idea of what you want they are generally more willing to help, or at least hear you out. Each section in this guide offers information that will give you some ideas as to what tools will be most useful to accomplish your goals and cover game design concepts so that you will have the vocabulary to communicate these goals. The following list describes just a few ways you may want to interface with the content here. 
 
 0. Read through the whole document. That’s right, sometimes the best way to figure out what you want is to get a holistic view of the options available to you. 
 0. Think of a game that is similar to what you want. The subsection below contains a list of both Mainstream AAA games, indie games, and experimental/academic games along with the tools and concepts that will lend themselves more to the creation of those types of games. &#96;(&#96;Note: Your final project will most likely not be as polished as many industry games. Keep in mind that unless your team is a full time professional development studio, they will not have the resources, time, or budget to achieve an exceptionally high level of polish. Read more about scope in the Design section).
@@ -54,25 +144,42 @@ Finally, before you move forward with your project, use this checklist to get an
 
 This document is by no means exhaustive, though it should cover many of the bases to get you started. It should also be noted that this resource is based on the experience of the author and so contains biases and preferences. As a designer, client, or creative director remember to listen to the expertise of the team you assemble and take their experience and ability into account when defining your requirements. 
 
-</tw-passagedata><tw-passagedata pid="7" name="Full Text" tags="" position="5122,1124" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="8" name="Requirements Checklist" tags="" position="5557,1106" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="9" name="Similar Game Database" tags="" position="5267,1122" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="10" name="Design Flowchart" tags="" position="5821,1056" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="11" name=" Attribution" tags="" position="3316,0" size="100,100">This guide has been written and compiled by Jack Murray with help and input from both game development professionals, artists, and games academics. 
+Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="7" name="Full Text" tags="" position="5122,1124" size="100,100">Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="8" name="Requirements Checklist" tags="" position="5557,1106" size="100,100">Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="9" name="Similar Game Database" tags="" position="5267,1122" size="100,100">Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="10" name="Design Flowchart" tags="" position="5821,1056" size="100,100">Back to: [[Introduction]]
+</tw-passagedata><tw-passagedata pid="11" name=" Attribution" tags="" position="3316,0" size="100,100">This guide has been written and compiled by Jack Murray with help and input from both game development professionals, artists, and games academics. 
 
 &lt;a href = &quot;https://www.jackademia.com/&quot; target=&quot;_blank&quot;&gt;Jack Murray&lt;/a&gt; is a PhD Student in the Texts and Technology program at UCF. This guide was written during their time as a Research Assistant at Center for Humanities and Digital Research under the supervision of Dr. Mike Shier. Jack has a background in game design, development, and critical game studies, as well as software engineering. He has received an MA in Arts, Technology, and Emerging Communication with a focus in Game Studies and a BS in Software Engineering both from the University of Texas at Dallas. Jack has worked in the industry as an interactive software developer for companies such as 900lbs of Creative developing Virtual and Augmented Reality experiences used for both training and marketing. Jack has also been active in the academic games space, working with the Narrative Systems Research Lab at UT Dallas as an engineer, game designer, and consultant on several projects and is a remote contributor to the Studio for Mediating Play. 
+
+
+Back to: [[Introduction]]
 </tw-passagedata><tw-passagedata pid="12" name="Medium" tags="" position="1621.333333333333,987.6666666666666" size="100,100">&#39;&#39;Overview&#39;&#39;
 [[Screen Space]]
 [[AR]]
 [[VR]]
-[[Analog/Physical]]</tw-passagedata><tw-passagedata pid="13" name="Platforms" tags="" position="2046.3333333333333,990.3333333333331" size="100,100">&#39;&#39;Overview&#39;&#39;
+[[Analog/Physical]]
+
+Back to: [[Technology]] </tw-passagedata><tw-passagedata pid="13" name="Platforms" tags="" position="2046.3333333333333,990.3333333333331" size="100,100">&#39;&#39;Overview&#39;&#39;
 [[PC]]
 [[Mobile]]
 [[Console]]
-[[Analog/Physical]]</tw-passagedata><tw-passagedata pid="14" name="Engines" tags="" position="2398.0000000000005,1758.6666666666667" size="100,100">&#39;&#39;Overview&#39;&#39;
+[[Analog/Physical]]
+
+Back to: [[Technology]] </tw-passagedata><tw-passagedata pid="14" name="Engines" tags="" position="2431.333333333334,1705.3333333333333" size="100,100">##Overview
 Game engines are a set of tools that have been put together to help facilitate game development. Most game engines come equipped with their own physics, graphics, and scripting systems that are already compatible with each other. Different engines also have different levels of abstraction. Engines with higher levels of abstraction are often easier for people with little or no development experience and can be useful for making quick prototypes or proofs of concept. Engines with less abstraction offer much more flexibility, but have a higher learning curve. Some game engines even have marketplaces or repositories where other people can upload tools or scripts they have developed that can make it easier and faster for you.  As with any other tools, game engines have strengths and weaknesses. Some are better suited to specific designs and goals than others. Knowing what is available can influence the design and development of your game. Keeping these limitations and strengths in mind can help determine which game engine might work best for you. Below are some examples of popular game engines along with links to their documentation and learning resources. This list is not exhaustive, but covers many of the most popular options.
+It is possible that you will choose the wrong game engine when you start out. That is perfectly OK. My advice is to 
 
 [[Unity]]
 [[Unreal Engine 4]]
 [[Game Maker]]
 [[Twine]]
-[[Other Engines]]</tw-passagedata><tw-passagedata pid="15" name="Screen Space" tags="" position="1484.6666666666665,1176" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="AR" tags="" position="1634.6666666666665,1176" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="VR" tags="" position="1784.6666666666665,1176" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Analog/Physical" tags="" position="1867.9999999999998,1306" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="19" name="PC" tags="" position="1946.3333333333333,1155.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Mobile" tags="" position="2096.3333333333335,1155.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Console" tags="" position="2246.3333333333335,1155.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Unity" tags="" position="2098.0000000000005,1908.6666666666667" size="100,100">
+[[Other Engines]]
+
+
+Back to: [[Technology]] </tw-passagedata><tw-passagedata pid="15" name="Screen Space" tags="" position="1484.6666666666665,1176" size="100,100">Back to: [[Medium]] </tw-passagedata><tw-passagedata pid="16" name="AR" tags="" position="1634.6666666666665,1176" size="100,100">Back to: [[Medium]] </tw-passagedata><tw-passagedata pid="17" name="VR" tags="" position="1756.3333333333333,1177.6666666666667" size="100,100">Back to: [[Medium]] </tw-passagedata><tw-passagedata pid="18" name="Analog/Physical" tags="" position="1867.9999999999998,1306" size="100,100">Back to: [[Platforms]] 
+Back to: [[Medium]] </tw-passagedata><tw-passagedata pid="19" name="PC" tags="" position="1946.3333333333333,1155.333333333333" size="100,100">Back to: [[Platforms]] </tw-passagedata><tw-passagedata pid="20" name="Mobile" tags="" position="2096.3333333333335,1155.333333333333" size="100,100">Back to: [[Platforms]] </tw-passagedata><tw-passagedata pid="21" name="Console" tags="" position="2246.3333333333335,1155.333333333333" size="100,100">Back to: [[Platforms]] </tw-passagedata><tw-passagedata pid="22" name="Unity" tags="" position="1791.3333333333337,1917" size="100,100">
 ##Unity Overview
 
 Unity is a popular game engine for creating 2D or 3D interactive experiences. Unity includes built in 2D/3D physics, drag and drop GUI components, and several graphics and rendering pipelines making it easy to quickly make prototypes that can be expanded and fine tuned. Unity is a robust engine that is a solid choice for most projects and has tons of documentation and resources available. Unity also has an extensive online marketplace that contains tools and assets that can make development easier. There is also a large community who make free or open source tools.
@@ -89,11 +196,11 @@ Unity’s physics engine supports both 2D and 3D gameplay and has specialized fu
 
 ##Visuals in Unity
 
-Even though Unity is officially called “Unity3D”, unity can be used to create both 3D and 2D games. When creating a Unity project you can choose between a 3D or 2D project which will automatically configure the editor for that type of development. 
+Even though Unity is officially called “Unity3D&quot;, unity can be used to create both 3D and 2D games. When creating a Unity project you can choose between a 3D or 2D project which will automatically configure the editor for that type of development. 
 
 To develop 3D games in Unity, you will need someone who is familiar with 3D Modeling using Blender, Maya, or other similar software. Additionally you will need someone who is familiar with rigging and animating 3D models. Alternatively, there are resources online where you can find 3D assets that already exist, either available for purchase or for free. You can also find assets on the Unity Marketplace. 
 Unity also includes tools for blocking out and creating environments and levels, such as ProBuilder.
-Unity’s engine also includes several “3D primitives” by default that can be used as placeholders during development. However, you can build your entire game using only these basic objects.
+Unity’s engine also includes several “3D primitives&quot; by default that can be used as placeholders during development. However, you can build your entire game using only these basic objects.
 
 With 2D graphics you will be primarily working with Unity’s Sprite system, which takes an image and allows it to be rendered into the gamespace. These can be any file format, though .PNG is often the standard. There are multiple ways of doing animation in 2D for Unity. The three most common are to create sprite sheets that contain each animation frame for sprites. Alternatively, Unity has the capability to import motion graphics from programs like Adobe After Effects. Unity also has the capability to import certain file types with layer support that allows you to rig and animate 2D characters inside the unity engine. There are also tools that will allow you to rig and animate 2D characters then export them into a format usable by Unity. 
 Unity’s Tilemap system makes it easy to create 2D environments. 
@@ -149,7 +256,334 @@ Unity has begun investing in research and development for Machine Learning withi
 &lt;a href = &quot;https://learn.unity.com/tutorial/transitioning-from-unreal-to-unity#&quot; target=&quot;_blank&quot;&gt;Moving from Unreal to Unity&lt;/a&gt;
 &lt;a href = &quot;https://assetstore.unity.com/&quot; target=&quot;_blank&quot;&gt;Unity Asset Store&lt;/a&gt;
 &lt;a href = &quot;https://unity3d.com/machine-learning&quot; target=&quot;_blank&quot;&gt;Machine Learning in Unity&lt;/a&gt;
-</tw-passagedata><tw-passagedata pid="23" name="Unreal Engine 4" tags="" position="2248.0000000000005,1908.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="24" name="Game Maker" tags="" position="2398.0000000000005,1908.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="25" name="Twine" tags="" position="2548.0000000000005,1908.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="Other Engines" tags="" position="2698.0000000000005,1908.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Games Made in Unity" tags="" position="2098.0000000000005,2058.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+
+
+[[Engines]] </tw-passagedata><tw-passagedata pid="23" name="Unreal Engine 4" tags="" position="1941.3333333333337,1917" size="100,100">##Overview
+
+Unreal Engine is a 3D game engine developed by Epic Games. UE4 is currently used by many industry game developers ranging from large AAA Studios to independent or solo developers. The most well known game made with Unreal is the cultural phenomenon that is Fortnite, though several large games such as Gearbox’s Borderlands or Arc System Works’  Dragon Ball FighterZ. UE4 can be used for a variety of 3D or 2D game projects, but is less flexible for non-game interactive experiences. UE4 has many built in tools that make development more accessible for designers and artists, including powerful graphics tools. It is less friendly for engineers and programmers because it attempts to abstract away certain functionality for programming, and they have only recently begun updating their documentation. The level of documentation of Unreal Engine varies depending on what tools you are planning on using, though there is a large community of developers creating resources and tutorials. UE4 also has a marketplace that has tools and assets that can help with development. 
+UE4 also has built in Virtual Reality support. 
+
+##Programming
+
+UE4 has two options for programming. For traditional text based programming UE4 uses C++ to for most things and has an extensive library of functions. C++  can be used to do basic scripting, but also be used to modify engine functionality, define physics behaviors, or perform other low level operations. The documentation for writing C++ for Unreal Engine has not been great in the past, but more recently Epic has been putting effort into updating their documentation and first party tutorials. 
+
+The major focus of UE4 was the overhaul of their visual node based scripting program now called Blueprint. In the past the visual scripting in Unreal Engine was used so that level and narrative designers could incorporate basic functionality without needing to be familiar with C++. With the release of UE4, the expanded blueprint system is more robust and it is possible to build entire games and prototypes using only blueprints. The UE4 development community has latched on wholeheartedly to blueprints and there are many resources and tutorials available for learning them. The downside is that it can be difficult to keep your Blueprint scripts organized, but with prior planning and documentation these issues can be mitigated. 
+
+The ideal development pipeline for UE4 is to combine the approaches. You can make custom Blueprint nodes using C++ allowing engineers to have greater control over how things function, while still giving designers the flexibility to script events on their own. 
+
+UE4 supports both 3D and 2D gameplay physics, though support for 2D games is not as robust as support for 3D, especially when compared to other engines. . 
+
+##Visuals
+
+The default set up for Unreal Engine is geared towards 3D character driven gameplay, though it has the flexibility to facilitate any number of different kind of games. UE4’s strength is how easily you can get a simple prototype up and running in a 3D environment using included basic assets and blueprint scripts. As with most 3D based development environments, UE4 also includes a variety of primitive 3D objects that can be used as placeholders or to build out full levels. You can also import custom 3D meshes from modeling software such as Maya or Blender. UE4 also contains several high quality generic models that come packaged with the editor. These can be used for prototyping, but should be changed for any kind of polished game. 
+
+UE4 also has the capacity to make 2D Sprite based games using their Paper 2D plugin and libraries. Paper 2D adds support for using sprites, including an in engine Sprite Editor and animation support using Flipbooks. Sprites and Flipbooks can also be imported from external files. Unfortunately there is not as much documentation for Paper 2D as there is for 3D development. 
+
+Making user interfaces in UE4 can also be done through their  UI Widget and blueprint systems. UI can also be defined through code, though this process requires much more trial and error, you can ultimately end up with more control over UI processes. 
+
+Out of the box UE4 as one of the most robust lighting systems of the publicly available game engines. It includes all of the standard environmental lighting as well as features like volumetric fog and volumetric lighting. The downside to this is that you will need to rebuild the lighting often, which can take place in the background but may cause the editor to become unstable and possibly crash. Constantly rebuilding the lighting means that UE4 requires heavier duty hardware than other game engines, but the visual fidelity can be worth it if you have the resources and if that is the visual style you are aiming for. 
+
+##Marketplace/Community Tools
+
+Unreal Engine gives you access to the Unreal Marketplace. The marketplace contains a wide variety of art assets ranging from 2D sprites and UI components to full 3D environment packs and modular character models. In addition to art assets there are a variety of tools and plugins to make development easier. There are also blueprints and code packages that contain various functions and features that can cut down on the effort needed to accomplish engineering tasks. Alongside the marketplace there are many open source tools and resources made available by the community and can be found on code repositories such as GitHub or BitBucket. 
+
+##Other Tools
+
+Unreal Engine includes several useful tools out of the box, including the Blueprint and Lighting systems. UE4 includes an in depth materials editor for making custom textures, shaders, and other visual effects.UE4 also has a decently robust animation sequencer that can be used to do basic animations (though not as robust as something like Blender or Maya) and can also be used to put together cinematics or scripted events. 
+
+UE4 has built in support for SVN source control, though any collaboration will need to be hosted through a 3rd party service such as GitHub or Perforce.
+
+&#39;&#39;UE5&#39;&#39;
+Unreal Engine 5 is expected to be released early 2021, however much of the fundamentals will remain the same across versions. UE5 is expected to have an updated render pipeline and some graphics tools that will mostly be useful for larger development studios and likely not necessary for most projects. 
+
+
+
+##Pros
+
+* Your Text HereYour Text HerePowerful in editor tools for Artists and Designers
+* Polished node based visual scripting
+* Functional 3D character controller out of the box. 
+* Artist Friendly
+*  or 3D games
+* Active Development Community
+* Free for small use cases
+
+##Cons
+
+* Not friendly to programmers
+* Editor Instability
+* No built in version control
+* Limited application beyond games
+* Questionable Documentation
+
+##Resources
+&lt;a href=&quot;https://www.unrealengine.com/en-US/&quot;&gt;UE Website&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/index.html &quot;&gt;Unreal Engine Documentation&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/Programming/index.html &quot;&gt;Programming Guide&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html &quot;&gt;Blueprint Guide&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/Engine/Paper2D/index.htmlmaking%20a &quot;&gt;Paper2D guide&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/GettingStarted/index.html &quot;&gt;Getting Started Guides&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/GettingStarted/FromUnity/index.html &quot;&gt;Unreal Engine for Unity Developers&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/Engine/UMG/HowTo/CreatingWidgets/index.html &quot;&gt;UI Guide&lt;/a&gt;
+&lt;a href=&quot;https://docs.unrealengine.com/en-US/Resources/index.html &quot;&gt;Samples and Tutorials&lt;/a&gt;
+&lt;a href=&quot;https://answers.unrealengine.com/index.html &quot;&gt;Unreal Engine Answers Hub&lt;/a&gt;
+&lt;a href=&quot;https://www.reddit.com/r/unrealengine/ &quot;&gt;Unreal Engine Community Subreddit&lt;/a&gt;
+&lt;a href=&quot;https://www.unrealengine.com/marketplace/en-US/store &quot;&gt;Unreal Marketplace&lt;/a&gt;
+
+[[Games made in UE4]]
+
+[[Engines]] </tw-passagedata><tw-passagedata pid="24" name="Game Maker" tags="" position="2091.333333333334,1917" size="100,100">##Overview
+
+GameMaker is a 2D game engine that has been around since 1999. The most recent version of the engine, GameMaker Studio 2, was released in early 2017. GM specializes in making 2D Sprite based games, though it is possible to create 3D games it is not recommended as it is definitely more trouble than it is worth. GameMaker is popular because of it’s accessibility, featuring both a drag and drop programming interface, or a code based scripting language called GML. GameMaker is also capable of building games for a variety of platforms including Web, Mobile, and most major video game consoles. Because of its longevity, GameMaker has extensive documentation and resources available online in addition to a marketplace of user generated content. There are two versions of GameMaker Studio available, GMS1.8 and GMS2. Both have similar functionality, though GMS2 has newer features and more long term support. 
+
+##Programming
+
+GameMaker uses  a scripting language similar to JavaScript called GameMaker Language, or GML. GML has a low barrier to entry and is fairly easy for people with little or no programming experience to pick up. It is also more forgiving than most programming languages associated with game engines. There are, however, some idiosyncrasies with the way scripts are written and interact with each other that may cause some frustration for programmers who are used to working with other languages. GML is fairly robust and has a large library of engine specific functions that can be viewed on GameMaker’s documentation website. 
+
+GameMaker Studio also has a drag and drop interface that has had a major overhaul as of GMS2. The drag and drop functionality can be mixed and matched with GML, though the two cannot directly interact easily with each other. In GMS2, the drag and drop interface includes a code preview displaying the corresponding GML script making it easier to transition from drag and drop into pure GML. The drag and drop interface can be used to quickly make prototypes. It is also possible to make a full game using only drag and drop, though the functionality and scope of the game will be limited. I would recommend shifting to GML as early as possible for any projects done in GameMaker. 
+
+##Visuals
+
+GameMaker excels at making games with 2D graphics because of the extensive sprite based rendingering, GML functions, and built in sprite editing tools.You can also import sprite sheets or animations from several image processing programs like Photoshop or Aseprite. This gives you the flexibility for different styles ranging from realistic illustrations to retro style pixel art. The possibilities are endless, though you should consider what is appropriate for your project and the skill set of your artists. You can also easily swap between temporary graphics and finalized versions.
+
+While you can technically do 3D work in GameMaker you will lose access to many of the built in tools and will have to do a lot of work on your own. If you want a 3D game you should use another engine such as Unreal or Unity. 
+ 
+Another drawback of GameMaker is that the UI will probably have to be made from scratch through code, this is particularly difficult, but it can be tedious and complicated if you are not familiar with it. However, this also gives you extra fine control over the visual and functionality of the UI. 
+
+##Marketplace/Community Tools
+
+Because GameMaker has been around for so long, there are tons of community tools and resources out there. In the past few years, YoYoGames (the developer behind GameMaker) has rolled out their own Marketplace where developers can post useful tools and other assets that can make developing your game easier. Additionally there are websites and code repositories where you can find code snippets that cover many common game mechanics or functionality. While some of these snippets may not do exactly what you want, there is usually something you can modify to achieve the desired effect. (Really this is the core of any software development).
+
+##Other Tools
+
+[[Games]]
+
+##Pros
+
+* Cheap Licenses
+* Beginner Friendly
+* Lots of resources for learning
+* Visual or Text based code editing
+* Built in Art Tools
+
+##Cons
+
+* 2 Versions still in use
+* Up Front Cost
+* Complex Licensing System 
+* You will need to purchase additional licensing to compile for non  PC/Mac/Linux platforms.
+* Bad for 3D
+
+##Resources
+&lt;a href=&quot;https://www.yoyogames.com/&quot;&gt;YoYoGames Website&lt;/a&gt;
+&lt;a href=&quot;http://docs2.yoyogames.com/&quot;&gt;GMS 2 Documentation&lt;/a&gt;
+&lt;a href=&quot;https://www.yoyogames.com/learn&quot;&gt;GM First Party Tutorials&lt;/a&gt;
+&lt;a href=&quot;https://marketplace.yoyogames.com/&quot;&gt;GM Marketplace&lt;/a&gt;
+&lt;a href=&quot;https://forum.yoyogames.com/index.php&quot;&gt;GameMaker Community Foums&lt;/a&gt;
+
+[[Engines]] </tw-passagedata><tw-passagedata pid="25" name="Twine" tags="" position="2241.333333333334,1917" size="100,100">##Overview
+
+Of all of the game engines here, Twine is probably the most friendly for new or non technical game developers and designers.  Twine is an open source tool for authoring interactive stories  or other branching experiences. In fact, the flowchart used for this guide is made in twine. Twine is very useful for everything from creating choose your own adventure style stories and creating prototypes of branching stories to acting as the back end for space exploration simulators or NPC dialog trees. Twine can also be combined with other game engines through the use of the Cradle or Yarn plugins for Unit that let you pass data back and forth.  Twine games can also exist on their own as simple HTML pages that can be modified and extended through the use of HTML, CSS, and JavaScript. If you are unsure where to begin with your development, Twine is always a good place to begin outlining a prototype. The only things you need to begin working in Twine is a computer with a supported browser and the ability to type.  
+
+##Programming
+
+Working with Twine can be as simple or as complex as you wish. As noted on the Twine homepage, there is not explicit programming requirement for using Twine. Rather Twine uses its own specific markup language for defining branches or other behaviors. This can be done through text or through their visual node based editor. Twine’s Node editing differs from the other game engines discussed because in twine each story segment is presented as a node. The core of Twine is built on the same principles as hypertext web pages by letting you insert hyperlinks that take you to the next story node. These nodes can accomplish a number of different effects. 
+
+Twine also gives you the ability to embed variables and conditional statements within your nodes letting you alter what options are available or other effects that can be achieved based on conditional statements. 
+Much of the complexity in twine comes from the different story formats available. Because twine is open source there are an endless number of formats available. You can even make your own, though that is not necessary unless none of the currently available formats fit your needs (though this is highly unlikely).  Included by default there are 4 formats that each offer different types of functionality and have different affordances and limitations. 
+
+&#39;&#39;Chapbook:&#39;&#39; This is one of the original Twine formats maintained by Twine’s Creator Chris Klimas. Chapbook is focused primarily on making it easy to author Twine stories and include different types of media as well as function across multiple platforms and devices. However, this means that there are a large number of things that Chapbook has a difficult time achieving. 
+
+&#39;&#39;Harlowe:&#39;&#39; Harlowe is perhaps the most commonly used format for twine and has been adopted as the default story format for the current iteration of twine. Harlowe preserves the ease of authoring in twine by providing an extensive markup, as well as providing a large library of macros and code functionality  to do common operations, such as Saving/Loading game data, as well as data structures, variables, and control flow statements that can be embedded into a node. 
+
+&#39;&#39;Snowman: &#39;&#39;This story format differs from Harlowe in that it exposes specific components so that the functionality can be added through Javascript and other JS Frameworks such as jQuery. It is recommended for people who are more familiar with web development and the way that Twine functions under the hood. 
+
+##Visuals
+
+Twine can be visually flexible because it outputs as an HTML page. This means that you can edit or modify the page just like you would with any webpage. 
+Twine has no animation built in, but you can also add custom JavaScript within the story nodes or include external JS files.  Additionally, with some of the plugins mentioned earlier, Twine can be used with other game engines.
+
+##Marketplace/Community Tools
+
+Because Twine is an open source project there is not marketplace as such. Instead the community has compiled what they call the “CookBook&quot; which has code samples and examples for many common effects and mechanics. These can be downloaded and modified to suit your needs. Additionally each story format usually has its own cookbook that you can reference as well. 
+If the cookbooks don’t have what you want, you should be able to find something you can modify in the community forums or on github. There are many tutorials and resources available for learning and using Twine. 
+
+[[Games made with Twine]]
+
+##Pros
+* Accessable
+* Easy to get started
+* Great Prototype Tool
+* Lots of community resources
+* Great for Narrative games
+* Flexibility through Scripting Languages
+* Integration into other engines
+* Open Access
+##Cons
+* No built in art
+* Bare bones graphics
+* Limited interactivity (without external scripting)
+* Primarily text based
+
+Resources
+
+
+[[Engines]] </tw-passagedata><tw-passagedata pid="26" name="Other Engines" tags="" position="2391.333333333334,1918.6666666666667" size="100,100">##GoDot
+
+GoDot is a 3D engine similar to nity that has been growing in popularity over the past few years. Much of this growth is driven by GoDot being an open source alternative to Unity with no licensing fee. Like Unity, GoDot performs well with both 3D and 2D games. Also like Unity, GoDot has multiple built in tools to make development easier for you, including 3D scene editing and animation. GoDot also supports several scripting languages including their custom language GDScript, C#, C++, and a few others made possible through community efforts. 
+&lt;a href=&quot;https://www.godotengine.org/&quot; target=&quot;_blank&quot;&gt;GoDot Website&lt;/a&gt;
+
+##Source
+
+Source Engine is a 3D game engine developed by Valve, the developers of games like Portal, Half-Life, Left4Dead, Counter-Strike, and DotA2. The Source Development kit is available through the Steam client. The biggest downside is that most of the documentation is oriented towards making mods for exiting games. 
+&lt;a href=&quot;https://developer.valvesoftware.com/wiki/Main_Page&quot; target=&quot;_blank&quot;&gt;Source Engine Developer Wiki&lt;/a&gt;
+
+##RenPy
+
+RenPy is a  game engine for developing visual novels. It is an open source project and uses python as a scripting language.
+&lt;a href=&quot;https://www.renpy.org/&quot; target=&quot;_blank&quot;&gt;RenPy home page&lt;/a&gt;
+
+##RPGMaker
+
+RPG Maker is an engine that can be used to make JRPG style games. It includes a robust editor for creating art assets in the engine as well as a tile based map editor. It also features a drag and drop script editor, and more recent versions include more advanced scripting features. 
+&lt;a href=&quot;https://www.rpgmakerweb.com/&quot; target=&quot;_blank&quot;&gt;RPGMaker Home Page&lt;/a&gt;
+
+##Inform7
+
+Inform7 is an engine that is used for making text based adventures and other kinds of interactive fiction pieces. The scripting language is designed to be as natural as possible for describing places and actions. It is currently in the process of moving to open source. 
+&lt;a href=&quot;http://inform7.com/&quot; target=&quot;_blank&quot;&gt;Inform7 Home Page&lt;/a&gt;
+
+##Adventure Game Studio
+
+Adventure Game Studio is a windows based editor for creating point and click style adventure games.
+&lt;a href=&quot;https://www.adventuregamestudio.co.uk/ &quot;target=&quot;_blank&quot;&gt;AGS Home&lt;/a&gt;
+
+[[Engines]] </tw-passagedata><tw-passagedata pid="27" name="Games Made in Unity" tags="" position="1791.3333333333337,2067.0000000000005" size="100,100">[[Unity]] </tw-passagedata><tw-passagedata pid="28" name="Games made in UE4" tags="" position="1941.3333333333337,2067.0000000000005" size="100,100">##AA/Professional
+
+Fortnite - Epic
+Borderlands 3 - Gearbox
+Street Fighter V - Capcom
+Octopath Traveler - Square Enix
+Final Fantasy VII Remake - Square Enix
+Yoshi’s Crafted World - Nintendo
+Sea of Thieves - Rare
+
+##Independent/Solo
+
+Hellblade: Senua’s Sacrifice - Ninja Theory
+Dead By Daylight - Behaviour Interactive
+A Hat in Time - Gears for Breakfast
+Astroneer -  System Era Softworks
+
+##Academic/Serious Games
+
+Middle Passage - CHDR @ UCF
+
+
+[[Unreal Engine 4]] </tw-passagedata><tw-passagedata pid="29" name="Games" tags="" position="2091.333333333334,2067.0000000000005" size="100,100">[[Game Maker]] 
+</tw-passagedata><tw-passagedata pid="30" name="Games made with Twine" tags="" position="2241.333333333334,2067.0000000000005" size="100,100">Double-click this passage to edit it.
+[[Twine]]</tw-passagedata><tw-passagedata pid="31" name="3D" tags="" position="2893.333333333333,1288.6666666666667" size="100,100">## 3D
+
+In games that use 3D assets, levels, environments, characters, and many other things are made up of three dimensional shapes known as “Models.” Models are made up of several different components including the mesh, the rig or skeleton, and the texture.  The mesh is what gives the model its form. To the computer the mesh is a series of points that make up triangles. Each triangle is referred to colloquially as a “tri” (short for triangle)  or “poly” (short for polygon).  Taken together these triangles form the shape of the mesh. Developers will also refer to models as being “high” or “low” poly, this describes the number of polygons in a mesh.Something to be aware of is that the more polygons your mesh has, the higher quality it will be, however the downside is that higher poly count models will reduce the performance of your game and increase the file size.  Most animated films use high-poly models to increase the visual fidelity. They can get away with this because they are pre rendered before they are viewed, whereas models in games are rendered in real time. Most game studios will have their concept artists create high poly models of important characters or props to be used as reference for artists and for marketing purposes. These are then given to another 3D artist who will convert it to a lower poly model to be used in the game. This is not a feasible approach unless you have the resources to do so. 
+On top of the mesh you have the  Texture. Think of the texture as the skin of your model. This is what gives the model color and, well, texture. Imagine a cube. You can put a brown texture on it to make it look like wood. You can increase the fidelity of the texture by adding a wood grain pattern. You can even make the cube look like a door by adding a door knob to the texture.  Another piece of the texture is what is called a Normal Map. This is a monochrome image that tells the computer where there are bumps, ridges, depressions, or other similar features on an object. This is used by the game engine to determine how light will interact with the model. You can make a texture as high resolution and detailed as you want, however just like the mesh, the higher the quality, the lower your performance will be. 
+Finally the Rig. The Rig is essentially a series of bones and muscles that tell the model how it is supposed to move. Animators use the rig in the way a puppeteer uses the strings and joints of a marionette. By manipulating the rig, animators are able to move the model and have it change poses. We’ll talk more about animation later on in the technical art section of this document.  You can also use code to interact with the model’s rig. This lets you define procedural movement and code driven animations and behaviors. 
+
+With 3D art there are several different approaches to consider. Each of these have their own strengths and weaknesses.
+ 
+	##Stylized
+
+Stylized graphics tend to be described as “cartoony” or “painterly” ; these are often lower poly models and lower resolution textures. Stylized games are more interested in having a cohesive and unique visual aesthetic. Stylized graphics also tend to require less effort and resources while being more performance friendly and last longer without looking outdated. The disadvantages of this style can cause some issues for players and creative directors who are interested in a “realistic” looking game. Another issue is finding a visual style that your art team can replicate as well as creating a consistent visual language for your game. 
+
+###Pros: 
+
+* Easier to make
+* Performance Friendly
+* Ages Well
+* Easy to find premade assets that fit with little effort
+
+###Cons:
+
+* Can be off putting to players
+* Difficult to maintain consistent style
+
+###Examples:
+
+
+	##Realistic
+
+Realistic graphics are exactly what it sounds like. In this style the artists try to make the game look as much like real life as possible. Unless you are a AAA studio with a huge budget, it is never worth it to chase this goal. Not only is it time and resource intensive, but the graphics will show their age much quicker than a stylized design. 
+
+###Pros:
+ 
+* Looks good
+* Can generate buzz around your project
+
+###Cons:
+
+* Expensive and Resource intensive
+* Time Consuming
+* Hard to do well
+* Gets outdated quickly
+* Slows down development time.
+
+###Examples:
+
+	##Fake 2D
+The Fake 2D style is something that has been on the rise with the growing popularity of accessible 3Dd game engines like Unity and Unreal. It is a subset of the Stylized school of 3D art, but deserves to be pointed out specifically because if you use this you will have to design your game with this in mind. With this style the goal is to make 3D models appear two dimensional through the use of stylized texturing, camera perspectives, and a kind of script called a shader (covered more later).  This style is often preferred over a pure 2D approach because it refuses the pressure on the artists. Instead of creating multiple pieces of art for each frame of animation, you can use 3D animation techniques instead. This puts less pressure on your artists, but has a somewhat higher technical hurdle. Additionally, this gives you the flexibility of using 3D tools for creating cutscenes and the ability to change the camera perspective of your game.
+
+###Pros
+:
+* Flexible
+* Quick to make compared to pure 2D
+* Good Performance
+* Ages well
+
+###Cons:
+
+* Higher technical overhead (e.g. shaders, 3D animation)
+* Need to commit to this method early
+
+###Examples:
+
+Back to: [[Art]] 
+</tw-passagedata><tw-passagedata pid="32" name="2D" tags="" position="3043.333333333333,1288.6666666666667" size="100,100">##2D
+
+Games with 2D art tend to be a little bit easier to make if only you don’t need to account for three dimensional space and lighting when developing the games. Much of the burden for creating a compelling visual experience falls on the artists rather than the engineers. 2D graphic work best when your team has a high concentration of artists with 2D capabilities. 2D graphics can be as photorealistic or stylized as desired, though you should take into consideration the amount of labor this will create for your artists. Additionally, a more stylized approach to 2D graphics will not only hold up better, but will give your game a more coherent feel and flexibility in terms of aesthetic choices. Additionally 2D graphics can be created with any software where you can create images. In order to animate 2D images, most game engines will require you to create a sprite sheet, which is a single image file that contains every permutation of a character’s animation keyframes. Some game engines include tools that let you import adobe After Effects style motion graphics, photoshop layers, or other similar output formats in order to create a rigged 2D model, similar to how this functions in a 3D engine. Some game engines, like Unity, have tools that allow you to create a skeleton/rig for your 2D sprites inside the editor. In these situations you do not need to create a sprite sheet. 
+
+###Pros:
+
+* Less Technically demanding
+* Stylistically flexible
+* Lots of support
+* Easier to prototype and iterate
+
+###Cons:
+
+* Puts more work on artists
+* Locks in genre and perspective early in development
+* Less gameplay flexibility
+
+###Example:
+
+Back to: [[Art]] </tw-passagedata><tw-passagedata pid="33" name="Environment Art" tags="" position="3193.333333333333,1288.6666666666667" size="100,100">##Environment Art
+
+Environment art refers to several things ranging from the objects and terrain that make up the world the player can run around in. This includes everything from the terrain,ground and paths that players can follow to trees, bushes, crates, boxes, fences, and other things that fill the world to the distant horizon landscapes and skyboxes that give your world a sense of depth. Your approach to environment art will vary depending on what development methods you’re using, but your environment artist will work closely with the level designer to help guide the player and bring the world to life.
+
+Back to: [[Art]] </tw-passagedata><tw-passagedata pid="34" name="Technical Art" tags="" position="3343.333333333333,1288.6666666666667" size="100,100">##Technical Art
+
+Technical artists occupy a role between engineer and artist and often doing some of the work of both. Technical art includes anything that relies on the game engine or computation to create a visual effect. This ranges from lighting, fog, volumetric effects, and shaders (which are special scripts that tell the computer how to render certain things on screen) to camera movement and effects, and particle systems.  Generally your technical artist will be in charge of any complex art implementation as well. 
+
+Back to: [[Art]] </tw-passagedata><tw-passagedata pid="35" name="Character Art" tags="" position="3470,1292" size="100,100">##Character Art
+
+Character art includes many things ranging from creating concept art for your characters to creating 3D models of the characters. The work your character artist is responsible for will differ based on what engines and aesthetic style you go for. For example in many 2D sprite based games your artist will be responsible for creating each animation frame.
+
+Back to: [[Art]] </tw-passagedata><tw-passagedata pid="36" name="Animation" tags="" position="3608.333333333333,1288.6666666666667" size="100,100">##Animation
+
+Animation can help add vibrance to your game through motion. While it is not strictly necessary, it can greatly enhance the visual appeal of your game, especially if you are working in 3D. It will be important for testing the feel of your game to have at least placeholder animations in place. Placeholder animations will also make it easier for your animators to create a large amount of animations. Its always best to have something that works then take time to clean it up later. 
+If you’re taking the 2D route animation can be a bit simpler and sometimes even driven by code. If you’re using a sprite based art style, your artists will need to create ‘sprite sheets’ that layout the animation in a single document. The process for this will vary depending on the engine, so be sure to check the documentation. 
+
+
+Back to: [[Art]] </tw-passagedata><tw-passagedata pid="37" name="playtesting" tags="" position="3706.6666666666665,485.33333333333326" size="100,100">Back to: [[Design]]</tw-passagedata><tw-passagedata pid="38" name="Development" tags="" position="3224.333333333333,345.6666666666667" size="100,100">Back to: [[Introduction]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
